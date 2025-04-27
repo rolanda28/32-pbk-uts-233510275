@@ -1,0 +1,58 @@
+.container {
+  max-width: 500px;
+  margin: 40px auto;
+  background: #f4f4f4;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.input-group {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+input[type="text"] {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+button {
+  padding: 10px 15px;
+  background: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+button:hover {
+  background: #45a049;
+}
+ul {
+  list-style: none;
+  padding: 0;
+}
+.activity-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: white;
+  margin-bottom: 8px;
+  padding: 10px;
+  border-radius: 5px;
+}
+.activity-item span {
+  flex: 1;
+  margin-left: 10px;
+}
+.activity-item span.done {
+  text-decoration: line-through;
+  color: gray;
+}
+.filter {
+  margin-bottom: 15px;
+}
