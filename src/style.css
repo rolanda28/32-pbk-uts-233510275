@@ -1,58 +1,107 @@
+
 .container {
-  max-width: 500px;
+  max-width: 600px;
   margin: 40px auto;
-  background: #f4f4f4;
-  padding: 30px;
-  border-radius: 10px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  border-radius: 12px;
+  background: #fefefe;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
 h1 {
   text-align: center;
+  color: #3f51b5;
   margin-bottom: 20px;
 }
+
 .input-group {
   display: flex;
   gap: 10px;
   margin-bottom: 15px;
 }
-input[type="text"] {
+
+.input-group input {
   flex: 1;
   padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
+  border: 2px solid #ddd;
+  border-radius: 6px;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
 }
-button {
-  padding: 10px 15px;
-  background: #4caf50;
+
+.input-group input:focus {
+  outline: none;
+  border-color: #3f51b5;
+}
+
+.input-group button {
+  padding: 10px 16px;
+  background-color: #3f51b5;
   color: white;
   border: none;
-  border-radius: 5px;
+  border-radius: 6px;
   cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
 }
-button:hover {
-  background: #45a049;
+
+.input-group button:hover {
+  background-color: #303f9f;
 }
+
+.filter {
+  margin-bottom: 15px;
+  font-size: 14px;
+  color: #555;
+}
+
 ul {
   list-style: none;
   padding: 0;
 }
+
 .activity-item {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  background: white;
-  margin-bottom: 8px;
+  gap: 10px;
   padding: 10px;
-  border-radius: 5px;
+  background-color: #f0f4ff;
+  border-radius: 6px;
+  margin-bottom: 8px;
+  transition: background-color 0.3s ease;
 }
+
+.activity-item:hover {
+  background-color: #e3ebff;
+}
+
+.activity-item input[type="checkbox"] {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
 .activity-item span {
   flex: 1;
-  margin-left: 10px;
+  font-size: 16px;
+  transition: color 0.3s ease;
 }
+
 .activity-item span.done {
   text-decoration: line-through;
-  color: gray;
+  color: #9e9e9e;
 }
-.filter {
-  margin-bottom: 15px;
+
+.activity-item button {
+  background: transparent;
+  border: none;
+  color: #e53935;
+  font-size: 20px;
+  cursor: pointer;
+  transition: color 0.3s ease;
 }
+
+.activity-item button:hover {
+  color: #b71c1c;
+}
+
